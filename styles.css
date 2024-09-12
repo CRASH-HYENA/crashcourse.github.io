@@ -74,16 +74,29 @@ nav ul li a {
 /* Features Section */
 .features {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 20px; /* Adds space between images */
-    justify-items: center; /* Centers the images horizontally */
-    align-items: center; /* Aligns the items vertically */
-    margin-top: 30px; /* Adds spacing at the top */
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px; /* Adds space between columns */
+    align-items: center; /* Vertically aligns the images and text */
+    margin-top: 30px;
+    text-align: center; /* Center-aligns text */
 }
 
 .features .feature img {
-    width: 300px; /* Larger fixed width for images */
-    height: auto; /* Keeps aspect ratio */
+    width: 300px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.features .feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* Aligns text in the middle */
+}
+
+.features .feature h3 {
+    margin-top: 10px;
 }
 
 /* Introduction and Features */
