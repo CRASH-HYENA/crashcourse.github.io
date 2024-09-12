@@ -114,3 +114,44 @@ footer {
     text-align: center;
     color: #FFFFFF;
 }
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    /* Stack nav links vertically on mobile */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adds space between nav items */
+    }
+
+    header .logo img {
+        max-width: 100px; /* Reduce logo size for smaller screens */
+    }
+
+    /* About Section */
+    .about {
+        width: 90%; /* Make the content area wider on small screens */
+        padding: 20px;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto; /* Ensure images keep their aspect ratio */
+    }
+
+    /* Features Section - Stack columns */
+    .features {
+        grid-template-columns: 1fr; /* Full-width columns on smaller screens */
+    }
+
+    /* CTA button responsive */
+    .cta-button {
+        font-size: 1em; /* Slightly smaller font for smaller screens */
+        padding: 10px 20px;
+    }
+}
