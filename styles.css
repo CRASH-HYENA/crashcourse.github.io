@@ -71,6 +71,24 @@ nav ul li a {
     margin-bottom: 20px; /* Adds space between paragraphs */
 }
 
+/* Policy Section */
+.policy {
+    width: 80%; /* Adjusts the width of the content for better readability */
+    margin: 20px auto; /* Centers the content horizontally and adds vertical margin */
+    padding: 20px; /* Adds padding inside the box */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    border: 2px solid #00A6FF; /* Cyan border to match the theme */
+    border-radius: 10px; /* Rounded corners for the box */
+    color: #FFFFFF; /* White text color to match the theme */
+    line-height: 1.8; /* Adds space between lines for better readability */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Optional: Add padding to paragraphs within the policy section */
+.policy p {
+    margin-bottom: 15px; /* Adds space between paragraphs */
+}
+
 /* Features Section */
 .features {
     display: grid;
