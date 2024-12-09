@@ -57,34 +57,6 @@ nav ul li a {
     background-color: #FF8040; /* Slightly Lighter Orange for Hover */
 }
 
-/* About Section */
-.about {
-    width: 60%; /* Adjusts the width of the content */
-    margin: 0 auto; /* Centers the content horizontally */
-    text-align: center; /* Centers the text inside the container */
-    line-height: 1.8; /* Adds space between lines for better readability */
-    padding: 40px 0; /* Adds padding at the top and bottom for breathing room */
-    color: #004D66; /* Deep blue text color to match the theme */
-}
-
-.about p {
-    margin-bottom: 20px; /* Adds space between paragraphs */
-}
-
-/* Team Section */
-.team {
-    width: 80%; /* Adjusts the width of the content for better readability */
-    margin: 20px auto; /* Centers the content horizontally and adds vertical margin */
-    padding: 20px; /* Adds padding inside the box */
-    background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
-    border: 2px solid #00A6FF; /* Cyan border to match the theme */
-    border-radius: 10px; /* Rounded corners for the box */
-    color: #FFFFFF; /* White text color to match the theme */
-    line-height: 1.8; /* Adds space between lines for better readability */
-    text-align: center; /* Aligns text to the left */
-}
-
-
 /* Policy Section */
 .policy {
     width: 80%; /* Adjusts the width of the content for better readability */
@@ -101,6 +73,90 @@ nav ul li a {
 /* Optional: Add padding to paragraphs within the policy section */
 .policy p {
     margin-bottom: 15px; /* Adds space between paragraphs */
+}
+
+/* About Section */
+.about {
+    width: 60%; /* Adjusts the width of the content */
+    margin: 0 auto; /* Centers the content horizontally */
+    text-align: center; /* Centers the text inside the container */
+    line-height: 1.8; /* Adds space between lines for better readability */
+    padding: 40px 0; /* Adds padding at the top and bottom for breathing room */
+    color: #004D66; /* Deep blue text color to match the theme */
+}
+
+/* Navigation Styling for Dropdown */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative; /* Enables dropdown positioning */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li:hover > a {
+    background-color: #FF8040; /* Lighter orange on hover */
+    border-radius: 5px;
+}
+
+/* Dropdown container */
+nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position dropdown relative to parent */
+    background-color: #FF6A00; /* Match header color */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add slight shadow */
+}
+
+/* Dropdown links */
+.dropdown a {
+    display: block;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown a:hover {
+    background-color: #FF8040; /* Lighter orange for hover */
+}
+
+
+
+.about p {
+    margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
+/* Team Section */
+.team {
+    width: 80%; /* Adjusts the width of the content for better readability */
+    margin: 20px auto; /* Centers the content horizontally and adds vertical margin */
+    padding: 20px; /* Adds padding inside the box */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    border: 2px solid #00A6FF; /* Cyan border to match the theme */
+    border-radius: 10px; /* Rounded corners for the box */
+    color: #FFFFFF; /* White text color to match the theme */
+    line-height: 1.8; /* Adds space between lines for better readability */
+    text-align: center; /* Aligns text to the left */
 }
 
 /* Features Section */
@@ -147,6 +203,41 @@ footer {
     color: #FFFFFF;
 }
 
+/* General Styles for About and Snowdon Page */
+.m-about, .past-events {
+    width: 60%;
+    margin: 20px auto; /* Center content */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add slight shadow */
+}
+
+.about p, .past-events p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.past-events {
+    margin-top: 40px;
+}
+
+.event-box {
+    background-color: #FF6A00; /* Bright Orange */
+    color: #FFFFFF;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.event-box h3 {
+    margin-top: 0;
+}
+
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     /* Stack nav links vertically on mobile */
@@ -186,4 +277,8 @@ footer {
         font-size: 1em; /* Slightly smaller font for smaller screens */
         padding: 10px 20px;
     }
+
+
+
+    
 }
