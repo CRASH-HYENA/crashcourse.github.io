@@ -197,27 +197,27 @@ nav ul li:hover .dropdown {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Space between images */
     padding: 20px;
 }
 
 .gallery figure {
-    margin: 0; 
-    padding: 0; 
-    background-color: transparent; 
-    border: none; 
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
     text-align: center;
 }
 
 .gallery img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
+    width: 100%; /* Ensure the image fills the width of the grid cell */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
 }
 
 .gallery figcaption {
-    display: none; /* Hide the captions if you don't want them */
+    display: none; /* Optionally hide captions */
 }
 
 /* Footer */
