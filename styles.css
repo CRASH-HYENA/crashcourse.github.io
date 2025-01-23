@@ -198,7 +198,7 @@ nav ul li:hover .dropdown {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increase the image size */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Increase the image size */
     gap: 20px;
     padding: 20px;
     height: 100%; /* Allow the gallery to take the full height of the page */
