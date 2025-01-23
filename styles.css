@@ -194,6 +194,32 @@ nav ul li:hover .dropdown {
     color: #004D66; /* Deep Blue Text */
 }
 
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery figure {
+    margin: 0; 
+    padding: 0; 
+    background-color: transparent; 
+    border: none; 
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.gallery figcaption {
+    display: none; /* Hide the captions if you don't want them */
+}
+
 /* Footer */
 footer {
     background-color: #FF6A00; /* Bright Orange */
