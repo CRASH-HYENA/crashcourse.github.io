@@ -195,29 +195,37 @@ nav ul li:hover .dropdown {
 }
 
 
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increase the image size */
     gap: 20px;
     padding: 20px;
+    height: 100%; /* Allow the gallery to take the full height of the page */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
 }
 
 .gallery figure {
-    margin: 0; 
-    padding: 0; 
-    background-color: transparent; 
-    border: none; 
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
     text-align: center;
 }
 
 .gallery img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
+    width: 100%; /* Make the images fill the width of the grid cell */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
+    transition: transform 0.3s ease; /* Optional: add a hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Optional: slight zoom effect on hover */
 }
 
 .gallery figcaption {
-    display: none; /* Hide the captions if you don't want them */
+    display: none; /* Optionally hide captions */
 }
 
 /* Footer */
